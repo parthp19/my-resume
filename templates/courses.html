@@ -1,0 +1,104 @@
+{% extends "home.html" %}
+
+{% block title %}Courses{% endblock %}
+{% block head%}
+  {{ super() }}
+  <style>
+  body {
+    padding-top: 54px;
+  }
+  h1{
+    color:dark;
+  }
+  li{
+    color:dark;
+    text-align: center;
+  }
+  .padding{
+    padding-top: 75px
+  }
+  .modal-title{
+    color: grey;
+  }
+  </style>
+{% endblock%}
+{% block page_content%}
+
+
+<!-- Modal1 -->
+   <div class="modal fade" id="misy225Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal-dialog" role="document">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h5 class="modal-title" id="misy225ModalLabel">Course Description</h5>
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">&times;</span>
+           </button>
+         </div>
+         <div class="modal-body">
+
+           <p>Java Programming</p>
+         </div>
+         <div class="modal-footer">
+           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+         </div>
+       </div>
+     </div>
+   </div>
+
+   <!-- Modal2 -->
+      <div class="modal fade" id="misy330Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="misy330ModalLabel">Course Description</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+
+              <p>Database Design</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal3 -->
+         <div class="modal fade" id="misy350Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+           <div class="modal-dialog" role="document">
+             <div class="modal-content">
+               <div class="modal-header">
+                 <h5 class="modal-title" id="misy350ModalLabel">Course Description</h5>
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                   <span aria-hidden="true">&times;</span>
+                 </button>
+               </div>
+               <div class="modal-body">
+
+                 <p>Web Application Development</p>
+               </div>
+               <div class="modal-footer">
+                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+               </div>
+             </div>
+           </div>
+         </div>
+
+
+  <!-- Page Content -->
+  <div class="container">
+    <h1 class="mt-5 text-center"> <i class="fa fa-pencil" aria-hidden="true"></i> Courses</h1>
+    <ul class ="list-unstyled ">
+        <li class="padding"><button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#misy225Modal"> MISY225</button></li>
+        <li class="padding"><button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#misy330Modal"> MISY330</button></li>
+        <li class="padding"><button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#misy350Modal"> MISY350</button></li>
+    </ul>
+
+  </div>
+
+{% endblock%}

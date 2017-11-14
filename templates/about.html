@@ -1,0 +1,44 @@
+{% extends "home.html" %}
+
+{% block title %}
+About the Developer
+{% endblock %}
+
+{% block head %}
+  {{super()}}
+  <style>
+    body {
+      padding-top: 54px;
+    }
+     a:link {color: black;}
+     a:visited {color: black;}
+     a:hover {color: red;}
+     a:active {color: black;}
+
+    .mt-6{
+      display: inline-block;
+      padding-right: 30px;
+    }
+
+    #first-para {
+      padding-top: 15px;
+    }
+
+  </style>
+{% endblock %}
+
+{% block page_content %}
+<div class="container">
+   <h1 class="mt-5"><i class="fa fa-user-circle-o" aria-hidden="true"></i> About me</h1>
+
+  <p id="first-para"> I am currently a junior at the University of Delaware.  I am an Accounting and MIS major.</p>
+
+  <h3 id="link-header">Connect with me: </h3>
+
+  <div class="col col-lg-3">
+  <h3 class="mt-6"><a href="https://github.com/parthp19"><i class="fa fa-github" aria-hidden="true"></i></a></h3>
+  <h3 class="mt-6"><a href="https://www.facebook.com/profile.php?id=100000010863735&ref=bookmarks"><i class="fa fa-facebook" aria-hidden="true"></i></a></h3>
+</div>
+
+</div>
+{% endblock %}

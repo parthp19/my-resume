@@ -1,0 +1,26 @@
+{% extends "home.html" %}
+
+{% block title %}
+Homepage
+{% endblock %}
+
+{% block head%}
+  {{super()}}
+  <style>
+    body {
+      padding-top: 54px;
+    }
+
+    #intro {
+      padding-top: 15px;
+    }
+
+  </style>
+{% endblock %}
+
+{% block page_content %}
+<div class="container">
+   <h1 class="mt-5"><i class="fa fa-folder-o" aria-hidden="true"></i> My Resume</h1>
+   <p id="intro">This is a website for my resume! </p>
+ </div>
+{% endblock %}
