@@ -36,13 +36,14 @@ All Professors
         <td>{{professor.department}}</td>
         <td>
           <a href="/professors/edit/{{professor.id}}" class ="btn btn-success" role="button" aria-disabled="true"> Edit</a>
-        </td>
-  </tr>
-   {% endfor %}
- </tbody>
-</table>
-{% else %}
-<h3>There are no professors in the directory yet.</h3>
-{% endif %}
-</div>
-{% endblock %}
+            <a href="/professors/delete/{{professor.id}}" class="btn btn-danger" role="button" aria-disabled="true"> Delete</a>
+          </td>
+    </tr>
+     {% endfor %}
+   </tbody>
+  </table>
+  {% else %}
+  <h3>There are no professors in the directory yet.</h3>
+  {% endif %}
+  </div>
+  {% endblock %}
